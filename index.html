@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envía Rápido Nacional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #2b3d7e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1c2659;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://tse3.mm.bing.net/th/id/OIP.B2t48ZPZSqi0wLv2V31kawHaE7?w=640&h=426&rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.4);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .rastreo {
+      padding: 40px 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .rastreo h2 {
+      margin-bottom: 20px;
+    }
+
+    .rastreo input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .rastreo button {
+      padding: 10px 20px;
+      background-color: #2b3d7e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: white;
+      justify-content: space-around;
+    }
+
+    .servicio {
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .servicio img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .beneficios {
+      background-color: #e6e6e6;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .beneficios h2 {
+      margin-bottom: 20px;
+    }
+
+    .beneficios ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .beneficios li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .beneficios li::before {
+      content: '✔';
+      color: #2b3d7e;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      background-color: #1c2659;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .servicios {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .rastreo input {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+
+      .rastreo button {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Envía Rápido Nacional</h1>
+    <p>Conectamos Colombia con confianza y velocidad</p>
+  </header>
+
+  <nav>
+    <a href="#rastreo">Rastrear Guía</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Tu paquete, nuestro compromiso</h1>
+  </section>
+
+  <section id="rastreo" class="rastreo">
+    <h2>Rastrea tu envío</h2>
+    <input type="text" placeholder="Ingresa tu número de guía" />
+    <button>Rastrear</button>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <div class="servicio">
+      <img src="https://www.businessempresarial.com.pe/wp-content/uploads/2021/05/p1-min.jpg" alt="Entrega segura">
+      <h3>Entrega Segura</h3>
+      <p>Garantizamos la seguridad y protección de tus paquetes en todo el proceso.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.nl1gpW5nAkB3EUGkcR1hrwHaEK?w=1000&h=562&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cobertura nacional">
+      <h3>Cobertura Nacional</h3>
+      <p>Llegamos a todos los rincones del país con puntualidad y eficacia.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.B2t48ZPZSqi0wLv2V31kawHaE7?w=640&h=426&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Atención personalizada">
+      <h3>Atención Personalizada</h3>
+      <p>Nuestro equipo está listo para ayudarte en cada paso del envío.</p>
+    </div>
+  </section>
+
+  <section id="beneficios" class="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>Seguimiento en tiempo real</li>
+      <li>Precios competitivos</li>
+      <li>Atención al cliente 24/7</li>
+      <li>Red de transporte eficiente y segura</li>
+    </ul>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Envía Rápido Nacional - Todos los derechos reservados</p>
+    <p>Contacto: info@enviarapido.com | Tel: +57 300 000 0000</p>
+  </footer>
+
+</body>
+</html>
